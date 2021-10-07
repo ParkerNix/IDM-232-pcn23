@@ -1,4 +1,4 @@
-<?php include '' ?>
+<?php include 'includes/header.php' ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,9 +9,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1><?php
-    $LimeCookie = 'SOTY Lime Cookie Intro';
-    echo 'hayyy gurl, ' . $LimeCookie;
-    ?></h1>    
+    <p><?php
+    $LimeCookie = 'Yass queen skinny legend versace boots the house down slay queen hunty mama anna oop *click* daddy werk charlie XCX snatch my WIG!';
+    echo 'Um, ' . $LimeCookie;
+    ?></p>
+    <br>
+    <p><?php
+        function Sickening($is_sickening) {
+            $yuh = 10;
+            if ($is_sickening > 9) {
+                return 'You are sickening!';
+            } else {
+                return 'You are not that type of girl!';
+            }
+        echo Sickening($Yuh);
+    };?>
+    </p>
 </body>
 </html>
