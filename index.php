@@ -13,7 +13,7 @@
     <div class="body">
         <div class="feature">
             <div class="featimg">
-                <a href="#"><img src="images/grilledcheese.jpg" alt="grilled cheese"></a>
+                <a href="details.php"><img src="images/grilledcheese.jpg" alt="grilled cheese"></a>
             </div>
             <div class="feattext">
                 <h1>Ooey-Gooey Grilled Cheese</h1>
@@ -25,11 +25,11 @@
         <div class="menu">
             <div class="categories">
                 <h2>Categories</h2>
-                <a href="#"><img src="images/categories.png" alt="categories"></a>
+                <a href="categories.php"><img src="images/categories.png" alt="categories"></a>
             </div>
             <div class="all">
                 <h2>All Recipes</h2>
-                <a href="#"><img src="images/all.png" alt="all recipes"></a>
+                <a href="all.php"><img src="images/all.png" alt="all recipes"></a>
             </div>
             <div class="random">
                 <h2>Random Recipe</h2>
