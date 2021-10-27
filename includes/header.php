@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Yo wassup lil skrt</h1>
-</body>
+    <body>
+        <nav>
+            <div class="ram">
+                 <a href="index.php"><h1>Recipe & Me</h1></a>
+            </div>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you craving?">
+                <button type="submit" class="searchButton">
+                    Go
+                </button>
+            </div>
+        </nav>
+    </body>
 </html>

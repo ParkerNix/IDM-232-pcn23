@@ -1,0 +1,73 @@
+/*setup*/
+html {
+    box-sizing: border-box; 
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+   }
+   
+   body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(228, 228, 228);
+   }
+
+/*fonts*/
+@font-face {
+    font-family: 'open_sans';
+   src: url('../fonts/opensans-regular-webfont.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+  }
+   
+  @font-face {
+   font-family: 'open_sans';
+   src: url('../fonts/opensans-bold-webfont.woff2') format('woff2');
+   font-weight: bold;
+   font-style: normal;
+  }
+  
+  @font-face {
+   font-family: 'quicksand';
+   src: url('../fonts/quicksand-variablefont_wght-webfont.woff2') format('woff2 supports variations'),
+   url('../fonts/quicksand-variablefont_wght-webfont.woff2') format('woff2-variations');
+  }
+
+  h1, h2 {
+      font-family: 'quicksand', Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+  }
+
+  p {
+      font-family: 'open_sans', Arial, Helvetica, sans-serif;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  /*nav*/
+
+  .ram {
+    display: inline-block;
+    margin: 2rem 2rem;
+   }
+
+   .ram h1 {
+       margin: 0;
+       color: #000000;
+   }
+   
+   .search {
+    display: inline-block;
+    padding: 2.5rem 2rem;
+   }
+
+   nav {
+       display: flex;
+       justify-content: space-between;
+       background-color: #FCE9C5;
+   }
+
+   .body {
+       margin: 2rem;
+   }
