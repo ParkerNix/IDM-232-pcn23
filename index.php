@@ -16,13 +16,27 @@
                 <a href="#"><img src="images/grilledcheese.jpg" alt="grilled cheese"></a>
             </div>
             <div class="feattext">
-                <h1>Feature Recipe</h1>
-                <h2>Ooey-Gooey Grilled Cheese</h2>
+                <h1>Ooey-Gooey Grilled Cheese</h1>
                 <p>Looking for a dish you can make for lunch that won’t 
                     take hours and doesn’t cost you an arm and a leg? This dish has you covered.</p>
-                <a href="#"><p>Go to recipe</p></a>
+                <a href="details.php"><p>Go to recipe ></p></a>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="categories">
+                <h2>Categories</h2>
+                <a href="#"><img src="images/categories.png" alt="categories"></a>
+            </div>
+            <div class="all">
+                <h2>All Recipes</h2>
+                <a href="#"><img src="images/all.png" alt="all recipes"></a>
+            </div>
+            <div class="random">
+                <h2>Random Recipe</h2>
+                <a href="#"><img src="images/random.png" alt="random"></a>
             </div>
         </div>
     </div>
+<?php include 'includes/footer.php' ?>
 </body>
 </html>

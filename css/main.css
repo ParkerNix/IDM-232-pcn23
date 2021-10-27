@@ -7,7 +7,7 @@ html {
    body {
     padding: 0;
     margin: 0;
-    background-color: rgb(228, 228, 228);
+    background-color: #F8F8F8;
    }
 
 /*fonts*/
@@ -31,35 +31,52 @@ html {
    url('../fonts/quicksand-variablefont_wght-webfont.woff2') format('woff2-variations');
   }
 
-  h1, h2 {
+  h1 {
       font-family: 'quicksand', Arial, Helvetica, sans-serif;
       font-weight: 700;
       font-size: 2rem;
   }
 
-  p {
+  h2 {
+    font-family: 'quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  p, a, li {
       font-family: 'open_sans', Arial, Helvetica, sans-serif;
   }
 
   a {
-      text-decoration: none;
+      color: #000000;
+  }
+
+  a:hover {
+      color:rgb(182, 182, 182)
+  }
+
+  img {
+      width: 100%;
   }
 
   /*nav*/
 
   .ram {
     display: inline-block;
-    margin: 2rem 2rem;
+    margin: 1.5rem 2rem;
    }
 
    .ram h1 {
        margin: 0;
-       color: #000000;
+   }
+
+   .ram a {
+       text-decoration: none;
    }
    
    .search {
     display: inline-block;
-    padding: 2.5rem 2rem;
+    padding: 2rem 2rem;
    }
 
    nav {
@@ -68,6 +85,50 @@ html {
        background-color: #FCE9C5;
    }
 
-   .body {
-       margin: 2rem;
+   /*home/details*/
+
+   .feature, .dish {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 'img text';
+    gap: 2rem;
+    background-color: #E5E5E5;
    }
+
+   .feattext, .dishtext {
+       grid-area: text;
+       margin-right: 2rem;
+   }
+
+   .featimg, .dishimg {
+    grid-area: img;
+    }
+
+   .menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 1rem;
+    }
+
+    .categories, .all, .random {
+        text-align: center;
+    }
+
+    .recipe {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas: 'ingredients steps';
+        gap: 2rem;
+        margin: 2rem;
+        }
+
+    .ingredients {
+        grid-area: ingredients;
+    }
+
+    .steps {
+        grid-area: steps;
+    }
