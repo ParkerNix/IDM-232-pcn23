@@ -12,7 +12,7 @@
 <?php include 'includes/header.php' ?>
     <div class="body">
         <h1 class="header">All Recipes</h1>
-        <div class="list">
+        <div class="list" id="categories">
             <div class="recipe1">
                 <a href="breakfast.php">
                 <img src="images/breakfast.png" alt="breakfast">

@@ -43,7 +43,7 @@ html {
     font-size: 1.5rem;
   }
 
-  p, a, li {
+  p, a, li, input, textarea {
       font-family: 'open_sans', Arial, Helvetica, sans-serif;
   }
 
@@ -193,15 +193,16 @@ html {
 
     .editing {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 2fr 2fr;
+        grid-template-rows: .5fr 1fr 1fr 1fr .5fr .5fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 'title . .'
         'description . .'
         'ingredients . .'
         'steps steps .'
-        'upload . .';
+        'upload . .'
+        'submit . .';
         gap: 2rem;
-        margin: 20rem;
+        margin: 2rem;
         }
 
     .title {
@@ -222,4 +223,118 @@ html {
 
     .upload {
         grid-area: upload;
+    }
+
+    .submit {
+        grid-area: submit;
+        width: 5rem;
+        height: 2rem;
+    }
+
+    .type {
+        height: 5rem;
+        resize: horizontal;
+    }
+
+    /*mobile*/
+    @media (max-width: 420px) {
+        h1 {
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+      
+        h2 {
+          font-weight: 600;
+          font-size: 1rem;
+        }
+      
+        p, a, li, input, textarea {
+            font-size: .75rem;
+        }
+
+        img {
+            width: 40%;
+        }
+
+        /*nav*/
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            background-color: #FCE9C5;
+            padding: 0 1rem;
+        }
+
+        .ram {
+            display: inline-block;
+            margin: 2rem 0;
+        }
+
+        .search {
+            display: inline-block;
+            padding: 2rem 0;
+        }
+        
+        .searchTerm {
+            width: 5rem;
+        }
+
+        /*home/details*/
+
+        .feature, .dish {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            background-color: #E5E5E5;
+           }
+        
+        .feature img, .dish img {
+            width: 100%;
+        }
+
+        .feattext, .dishtext {
+            margin: 0 1rem 1rem;
+        }
+
+        .menu {
+            flex-direction: column;
+        }
+
+        .recipe {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            margin: 1rem;
+        }
+
+        /*lists*/
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1rem;
+            }
+
+        .list p {
+            text-align: left;
+        }
+
+        #categories p {
+            text-align: center;
+        }
+
+        /*edit*/
+         
+        .type {
+           width: 98%;
+           resize: none;
+        }
+
+        .editing {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+            }
     }

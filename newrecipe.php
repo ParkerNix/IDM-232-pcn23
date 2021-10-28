@@ -12,35 +12,29 @@
 <?php include 'includes/header.php' ?>
     <div class="body">
         <h1 class="header">All Recipes</h1>
-        <div class="editing">
+        <form class="editing">
             <div class="title">
                 <h2>Title</h2>
                 <input type="text" placeholder= "Title...">
             </div>
             <div class="description">
                 <h2>Description</h2>
-                <input type="text" placeholder= "This dish is...">
+                <textarea class="type" rows="5" cols="60" name="description" placeholder= "This dish is..."></textarea>
             </div>
             <div class="ingredients">
                 <h2>ingredients</h2>
-                <input type="text" placeholder= "1 cup of...">
-                <button id="adding">+</button>
-                <button id="subing">-</button>
+                <textarea class="type" rows="5" cols="60" name="ingredients" placeholder= "1 cup of..."></textarea>
             </div>
             <div class="steps">
                 <h2>Steps</h2>
-                <input type="text" placeholder= "First...">
-                <button id="addstep">+</button>
-                <button id="substep">-</button>
+                <textarea class="type" rows="5" cols="60" name="steps" placeholder="First..."></textarea>
             </div>
             <div class="upload">
                 <h2>Upload Image</h2>
-                <input type="file" placeholder="upload images here">
+                <input type="file">
             </div>
-        </div>
-        <div class="submit">
-            <button>Sumbit</button>
-        </div>
+            <input type="submit" value="Submit" class="submit">
+        </form>
     </div>
 <?php include 'includes/footer.php' ?>
 </body>

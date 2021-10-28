@@ -7,9 +7,7 @@
             </div>
             <div class="search">
                 <input type="text" class="searchTerm" placeholder="What are you craving?">
-                <button type="submit" class="searchButton">
-                    Go
-                </button>
+                <input type="submit" class="searchButton" value="Go">
             </div>
         </nav>
     </body>
