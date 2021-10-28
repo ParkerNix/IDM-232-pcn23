@@ -11,7 +11,7 @@
 <body>
 <?php include 'includes/header.php' ?>
     <div class="body">
-        <h1 class="header">All Recipes</h1>
+        <h1 class="header">Add Recipe</h1>
         <form class="editing">
             <div class="title">
                 <h2>Title</h2>
