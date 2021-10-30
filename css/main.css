@@ -55,12 +55,8 @@ html {
       color:rgb(182, 182, 182)
   }
 
-  img {
-      width: 100%;
-  }
-
   .body {
-      min-height: 71.8vh;
+      min-height: 88vh;
   }
 
   /*nav*/
@@ -87,6 +83,7 @@ html {
        display: flex;
        justify-content: space-between;
        background-color: #FCE9C5;
+       width: 100%;
    }
 
    /*home/details*/
@@ -237,7 +234,7 @@ html {
     }
 
     /*mobile*/
-    @media (max-width: 420px) {
+    @media (min-width: 240px) {
         h1 {
             font-weight: 700;
             font-size: 1.3rem;
@@ -263,17 +260,17 @@ html {
             justify-content: space-between;
             align-content: center;
             background-color: #FCE9C5;
-            padding: 0 1rem;
+            margin: 0;
         }
 
         .ram {
             display: inline-block;
-            margin: 2rem 0;
+            margin: 1rem 1rem;
         }
 
         .search {
             display: inline-block;
-            padding: 2rem 0;
+            padding: 1rem 1rem;
         }
         
         .searchTerm {
@@ -338,3 +335,301 @@ html {
             margin: 1rem;
             }
     }
+
+    @media (min-width: 420px) {
+        h1 {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+      
+        h2 {
+          font-weight: 600;
+          font-size: 1.3rem;
+        }
+
+        p, a, li, input, textarea {
+            font-size: 1rem;
+        }
+
+        img {
+            width: 40%;
+        }
+
+        .ram {
+            display: inline-block;
+            margin: 2rem 2rem;
+        }
+
+        .search {
+            display: inline-block;
+            padding: 1.8rem 2rem;
+           }
+
+        .menu {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 'categories all'
+            'random .';
+            }
+
+        .categories {
+            grid-area: categories;
+        }
+
+        .all {
+            grid-area: all;
+        }
+
+        .random {
+            grid-area: random;
+        }
+
+        .feature img, .dish img {
+            width: 100%;
+        }
+
+        .list {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 'recipe1 recipe2'
+            'recipe3 recipe4'
+            'recipe5 recipe6';
+            gap: 2rem;
+            margin: 2rem;
+        }
+
+        .list img {
+            width: auto;
+        }
+
+        .recipe1 {
+            text-align: center;
+            grid-area: recipe1;
+        }
+
+        .recipe2 {
+            text-align: center;
+            grid-area: recipe2;
+        }
+
+        .recipe3 {
+            text-align: center;
+            grid-area: recipe3;
+        }
+
+        .recipe4 {
+            text-align: center;
+            grid-area: recipe4;
+        }
+
+        .recipe5 {
+            text-align: center;
+            grid-area: recipe5;
+        }
+
+        .recipe6 {
+            text-align: center;
+            grid-area: recipe6;
+        }
+
+    }
+
+    @media (min-width: 800px) {
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+      
+        h2 {
+          font-weight: 600;
+          font-size: 1.5rem;
+        }
+
+        img {
+            width: 100%;
+        }
+        
+        /*nav*/
+
+        .ram {
+        display: inline-block;
+        margin: 2rem 2rem;
+        }
+
+        .ram h1 {
+           margin: 0;
+        }
+
+        .ram a, .list a {
+           text-decoration: none;
+        }
+   
+        .search {
+        display: inline-block;
+        padding: 2rem 2rem;
+        }
+
+        .searchTerm {
+            width: 11rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #FCE9C5;
+            width: 100%;
+        }
+
+        /*home/details*/
+
+        .feature, .dish {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas: 'img text';
+        gap: 2rem;
+        background-color: #E5E5E5;
+        }
+
+        .feattext, .dishtext {
+            grid-area: text;
+            margin-right: 2rem;
+        }
+
+        .featimg, .dishimg {
+            grid-area: img;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 1rem;
+            margin: 1rem;
+        }
+
+        .categories, .all, .random {
+             text-align: center;
+        }
+
+        .recipe {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 2fr 3fr;
+            grid-template-areas: 'ingredients steps';
+            gap: 2rem;
+            margin: 2rem;
+        }
+
+        .ingredients {
+            grid-area: ingredients;
+        }
+
+        .steps {
+            grid-area: steps;
+        }
+
+        /*lists*/
+
+        .list {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 'recipe1 recipe2 recipe3'
+            'recipe4 recipe5 recipe6';
+            gap: 2rem;
+            margin: 2rem;
+        }
+
+        .list img {
+            width: auto;
+        }
+
+        .recipe1 {
+            text-align: center;
+            grid-area: recipe1;
+        }
+
+        .recipe2 {
+            text-align: center;
+            grid-area: recipe2;
+        }
+
+        .recipe3 {
+            text-align: center;
+            grid-area: recipe3;
+        }
+
+        .recipe4 {
+            text-align: center;
+            grid-area: recipe4;
+        }
+
+        .recipe5 {
+            text-align: center;
+            grid-area: recipe5;
+        }
+
+        .recipe6 {
+            text-align: center;
+            grid-area: recipe6;
+        }
+
+
+        .header {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        /*Editing/Adding Recipes*/
+
+        .editing {
+            display: grid;
+            grid-template-rows: .5fr 1fr 1fr 1fr .5fr .5fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 'title . .'
+            'description . .'
+            'ingredients . .'
+            'steps steps .'
+            'upload . .'
+            'submit . .';
+            gap: 2rem;
+            margin: 2rem;
+            }
+
+        .title {
+            grid-area: title;
+        }
+
+        .description {
+            grid-area: description;
+        }
+
+        .ingredients {
+            grid-area: ingredients;
+        }
+
+        .steps {
+            grid-area: steps;
+        }
+
+        .upload {
+            grid-area: upload;
+        }
+
+        .submit {
+            grid-area: submit;
+            width: 5rem;
+            height: 2rem;
+        }
+
+        .type {
+            height: 5rem;
+            resize: horizontal;
+        }
+
+    }
+
+  
