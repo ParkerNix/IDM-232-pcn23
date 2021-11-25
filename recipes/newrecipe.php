@@ -15,7 +15,7 @@
         <form class="editing" action="../includes/process/create_appointments.php" method="POST">
             <div class="title">
                 <h2>Title</h2>
-                <input type="text" placeholder= "Title...">
+                <input type="text" name="title" placeholder= "Title...">
             </div>
             <div class="description">
                 <h2>Description</h2>
@@ -31,7 +31,7 @@
             </div>
             <div class="upload">
                 <h2>Upload Image</h2>
-                <input type="file">
+                <input type="file" name="image">
             </div>
             <input type="submit" value="Submit" class="submit">
         </form>

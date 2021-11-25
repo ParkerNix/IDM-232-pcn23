@@ -3,7 +3,7 @@
     <body>
         <nav>
             <div class="search">
-                <a href="recipes/newrecipe.php">
+                <a href="../../recipes/newrecipe.php">
                     Admin Log In
                 </a>
             </div>

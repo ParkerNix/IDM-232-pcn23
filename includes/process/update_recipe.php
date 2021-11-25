@@ -8,9 +8,14 @@
     $ingredientsField = $_POST['ingredients'];
     $stepsField = $_POST['steps'];
     $photoField = $_POST['photo'];
+    $id = $_POST['id']
+  
+    $query = "UPDATE recipes SET ";
+    $query .= "title = '{$title}', ";
+    $query .= "img = '{$img}', ";
+    $query .= "description = '{$description}' ";
+    $query .= "WHERE id = {$id}";
 
-    $query = "INSERT INTO `recipes`(`title`,`description`,`ingredients`,`steps`,`photo`)";
-    $query .= "VALUES ('{$titleField}','{$descriptionField}','{$ingredientsField}','{$stepsField}','N/A')";
 
     $db_connection->query($query);
 ?>

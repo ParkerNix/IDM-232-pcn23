@@ -10,12 +10,17 @@
 </head>
 <body>
 <?php include 'includes/header.php' ?>
+<?php 
+$query = "SELECT * FROM recipes LIMIT 1";
+echo $_POST?>
     <div class="body">
         <h1 class="header">Edit Recipe</h1>
         <form class="editing">
             <div class="title">
                 <h2>Title</h2>
-                <input type="text" placeholder= "Title...">
+                <input type="text" placeholder= "Title..."><?php echo $_POST[$title]?></input>
+                <h2>id</h2>
+                <input typt="text" name="id">1</input>
             </div>
             <div class="description">
                 <h2>Description</h2>
