@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "Normalizer" href= "css/normalizer.css"/>
-    <link rel= "stylesheet" href= "css/main.css"/>
+    <link rel= "Normalizer" href= "../css/normalizer.css"/>
+    <link rel= "stylesheet" href= "../css/main.css"/>
     <title>Home | Recipe & Me</title>
 </head>
 <body>
-<?php include 'includes/header.php' ?>
+<?php include '../includes/header.php' ?>
     <div class="body">
         <h1 class="header">Add Recipe</h1>
-        <form class="editing">
+        <form class="editing" action="../includes/process/create_appointments.php" method="POST">
             <div class="title">
                 <h2>Title</h2>
                 <input type="text" placeholder= "Title...">
@@ -36,6 +36,6 @@
             <input type="submit" value="Submit" class="submit">
         </form>
     </div>
-<?php include 'includes/footer.php' ?>
+<?php include '../includes/footer.php' ?>
 </body>
 </html>
