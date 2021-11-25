@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "Normalizer" href= "css/normalizer.css"/>
-    <link rel= "stylesheet" href= "css/main.css"/>
+    <link rel= "Normalizer" href= "../css/normalizer.css"/>
+    <link rel= "stylesheet" href= "../css/main.css"/>
     <title>Home | Recipe & Me</title>
 </head>
 <body>
-<?php include 'includes/header.php' ?>
+<?php include '../includes/header.php' ?>
 <?php 
-$query = "SELECT * FROM recipes LIMIT 1";
-echo $_POST?>
+    include '../includes/config.php';
+    include '../includes/database.php';
+    $rid = $_GET['id']
+    $query = "SELECT * FROM recipes WHERE id=" . $rid;
+    $result = mysqli_query($db_connection, $query);
+    if (!$result) {
+        die ("Database query failed.");
+    }
+    echo "<pre>";
+        while ($row = mysqli_fetch_array($result)) {
+    var_dump($row['ingredients']);
+    echo "<hr>";
+    }
+    echo "</pre>"?>
     <div class="body">
         <h1 class="header">Edit Recipe</h1>
         <form class="editing">
             <div class="title">
                 <h2>Title</h2>
-                <input type="text" placeholder= "Title..."><?php echo $_POST[$title]?></input>
-                <h2>id</h2>
-                <input typt="text" name="id">1</input>
+                <input type="text" placeholder= "Title..."></input>
             </div>
             <div class="description">
                 <h2>Description</h2>
@@ -42,6 +52,8 @@ echo $_POST?>
         </form>
         <button class="submit" id="delete">Delete</button>
     </div>
-<?php include 'includes/footer.php' ?>
+<?php include '../includes/footer.php';
+    mysqli_free_result($result); 
+    ?>
 </body>
 </html>
