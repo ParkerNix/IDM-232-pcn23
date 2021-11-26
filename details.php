@@ -50,6 +50,7 @@
                         is golden brown and cheese is melted, 5-6 minutes on each 
                         side. Serve immediately.</li>
                 </ul>
+                <a href="recipes/edit.php?id=1"><p>Edit</p></a>
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@
         <nav>
             <div class="search">
                 <a href="../../recipes/newrecipe.php">
-                    Admin Log In
+                    New Recipe
                 </a>
             </div>
         </nav>

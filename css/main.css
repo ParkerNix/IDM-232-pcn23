@@ -630,6 +630,12 @@ html {
             resize: horizontal;
         }
 
+        #delete {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
     }
 
   

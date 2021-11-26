@@ -1,6 +1,7 @@
 <?php
     include '../config.php';
     include '../database.php';
+    include '../helper.php';
 
 
     $titleField = $_POST['title'];
@@ -13,4 +14,5 @@
     $query .= "VALUES ('{$titleField}','{$descriptionField}','{$ingredientsField}','{$stepsField}','N/A')";
 
     $db_connection->query($query);
+    redirectTo('/../all.php?reason=success');
 ?>
