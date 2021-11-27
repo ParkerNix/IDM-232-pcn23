@@ -144,6 +144,7 @@ html {
         'recipe4 recipe5 recipe6';
         gap: 2rem;
         margin: 2rem;
+        align-content: center;
         }
 
     .list img {
@@ -158,11 +159,13 @@ html {
     .recipe2 {
         text-align: center;
         grid-area: recipe2;
+        align-self: center;
     }
 
     .recipe3 {
         text-align: center;
         grid-area: recipe3;
+        align-self: center;
     }
 
     .recipe4 {

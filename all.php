@@ -10,28 +10,23 @@
 </head>
 <body>
 <?php include 'includes/header.php' ?>
+<?php 
+    include 'includes/config.php';
+    include 'includes/database.php';
+    include 'includes/helper.php';
+    $reason = $_GET['reason'];
+    $query = "SELECT * FROM recipes";
+    $result = mysqli_query($db_connection, $query);
+?>
     <div class="body">
         <h1 class="header">All Recipes</h1>
-        <div class="list">
-            <div class="recipe1">
-                <a href="details.php"><h2>Berry French Toast</h2>
-                <img src="images/frenchtoastround.png" alt="categories">
-                <p>A tasty treat for you in the morning, this french toast recipe 
-                    will have you “berry” excited to eat!</p></a>
-            </div>
-            <div class="recipe2">
-                <a href="details.php"><h2>Cheesy Chorizo & Mozzerella Gnocchi</h2>
-                <img src="images/gnocchibakeround.png" alt="all recipes">
-                <p>Ever wonder what you can do with gnocchi? This savory dish will 
-                    show you one way to serve it up.</p></a>
-            </div>
-            <div class="recipe3">
-                <a href="details.php"><h2>Ooey-Gooey Grilled Cheese</h2>
-                <img src="images/grilledcheeseround.png" alt="random">
-                <p>Looking for a dish you can make for lunch that won’t take hours 
-                    and doesn’t cost you an arm and a leg? This dish has you covered.</p></a>
-            </div>
-        </div>
+        <?php
+        if ($result && $result->num_rows > 0) {
+            include 'includes/process/allrecipes.php';
+        } else {
+            echo '<p>Oops! There are no recipes here.</p>';
+        }
+        ?>
     </div>
 <?php include 'includes/footer.php' ?>
 </body>
