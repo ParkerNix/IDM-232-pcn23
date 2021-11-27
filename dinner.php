@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "Normalizer" href= "css/normalizer.css"/>
     <link rel= "stylesheet" href= "css/main.css"/>
-    <title>Home | Recipe & Me</title>
+    <title>Dinner | Recipe & Me</title>
 </head>
 <body>
 <?php include 'includes/header.php' ?>

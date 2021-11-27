@@ -9,8 +9,6 @@
     <title>Home | Recipe & Me</title>
 </head>
 <body>
-<?php require_once __DIR__ . '/includes/config.php';
-    require_once __DIR__ . '/includes/database.php'?>
 <?php include 'includes/header.php' ?>
     <div class="body">
         <div class="feature">

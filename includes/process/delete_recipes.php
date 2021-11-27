@@ -9,5 +9,5 @@
     $query = "DELETE FROM `recipes` WHERE id='{$rid}'";
 
     $db_connection->query($query);
-    redirectTo('/../all.php?reason=deletesuccess');
+    redirectTo('https://parkerishere.com/IDM232/all.php?reason=deletesuccess');
 ?>

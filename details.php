@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "Normalizer" href= "css/normalizer.css"/>
     <link rel= "stylesheet" href= "css/main.css"/>
-    <title>Home | Recipe & Me</title>
-</head>
-<body>
-<?php include 'includes/header.php' ?>
-<?php 
+    <?php 
     include 'includes/config.php';
     include 'includes/database.php';
     include 'includes/helper.php';
@@ -25,6 +21,10 @@
     } else {
         redirectTo('all.php?reason=noRecipe');
     }?>
+    <title><?php echo $row['title'];?> | Recipe & Me</title>
+</head>
+<body>
+<?php include 'includes/header.php' ?>
     <div class="body">
         <div class="dish">
             <div class="dishimg">
