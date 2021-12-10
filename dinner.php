@@ -7,6 +7,13 @@
     <link rel= "Normalizer" href= "css/normalizer.css"/>
     <link rel= "stylesheet" href= "css/main.css"/>
     <title>Dinner | Recipe & Me</title>
+    <?php 
+    include 'includes/config.php';
+    include 'includes/database.php';
+    include 'includes/helper.php';
+    $query = "SELECT * FROM recipes WHERE category = 'dinner'" ;
+    $result = mysqli_query($db_connection, $query);
+?>
 </head>
 <body>
 <?php include 'includes/header.php' ?>

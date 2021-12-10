@@ -7,24 +7,32 @@
     <link rel= "Normalizer" href= "css/normalizer.css"/>
     <link rel= "stylesheet" href= "css/main.css"/>
     <title>Results | Recipe & Me</title>
+    <?php 
+    include 'includes/config.php';
+    include 'includes/database.php';
+    include 'includes/helper.php';
+    $keyword = $_GET['keyword'];
+    $query = 'SELECT * ';
+    $query .= 'FROM recipes ';
+    $query .= ' WHERE ';
+    $query .= "title LIKE '%" . $keyword . "%'";
+    $query .= "OR description LIKE '%" . $keyword . "%' ";
+    $query .= "OR ingredients LIKE '%" . $keyword . "%' ";
+    $query .= "OR steps LIKE '%" . $keyword . "%'";
+    $result = mysqli_query($db_connection, $query);
+?>
 </head>
 <body>
 <?php include 'includes/header.php' ?>
     <div class="body">
-        <h1 class="header">Search results for: <br> "Cheese"</h1>
-        <div class="list">
-            <div class="recipe1">
-                <a href="details.php"><h2>Cheesy Chorizo & Mozzerella Gnocchi</h2>
-                <img src="images/gnocchibakeround.png" alt="all recipes">
-                <p>Ever wonder what you can do with gnocchi? This savory dish will 
-                    show you one way to serve it up.</p></a>
-            </div>
-            <div class="recipe2">
-                <a href="details.php"><h2>Ooey-Gooey Grilled Cheese</h2>
-                <img src="images/grilledcheeseround.png" alt="random">
-                <p>Looking for a dish you can make for lunch that won’t take hours 
-                    and doesn’t cost you an arm and a leg? This dish has you covered.</p></a>
-            </div>
+        <h1 class="header">Search results for: <br> "<?php echo $keyword ?>"</h1>
+        <?php
+        if ($result && $result->num_rows > 0) {
+            include 'includes/process/allrecipes.php';
+        } else {
+            echo '<p>Oops! There are no recipes here.</p>';
+        }
+        ?>
         </div>
     </div>
 <?php include 'includes/footer.php' ?>

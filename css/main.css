@@ -86,6 +86,39 @@ html {
        width: 100%;
    }
 
+   /*case study*/
+
+   .casebody {
+    margin: 2rem;
+  }
+  
+  .section {
+    background-color: #FCE9C5;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .process {
+    display: flex;
+    margin: 2rem;
+    gap: 1rem;
+  }
+  
+  .processRev {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2rem;
+    gap: 1rem;
+  }
+  
+  .big {
+    max-width: 50%;
+    border: .2rem solid black;
+    border-radius: 1rem;
+  }
+  
+
    /*home/details*/
 
    .feature, .dish {
