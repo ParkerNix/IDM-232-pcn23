@@ -15,10 +15,10 @@
     $query = 'SELECT * ';
     $query .= 'FROM recipes ';
     $query .= ' WHERE ';
-    $query .= "title LIKE '%" . $keyword . "%'";
-    $query .= "OR description LIKE '%" . $keyword . "%' ";
-    $query .= "OR ingredients LIKE '%" . $keyword . "%' ";
-    $query .= "OR steps LIKE '%" . $keyword . "%'";
+    $query .= "`title` LIKE '%" . $keyword . "%'";
+    $query .= "OR `description` LIKE '%" . $keyword . "%' ";
+    $query .= "OR `ingredients` LIKE '%" . $keyword . "%' ";
+    $query .= "OR `steps` LIKE '%" . $keyword . "%'";
     $result = mysqli_query($db_connection, $query);
 ?>
 </head>
