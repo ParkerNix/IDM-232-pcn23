@@ -14,9 +14,9 @@
                 I aimed to make mine simple and breathable, without all the extra things that recipe websites tend to put 
                 on their pages. To accomplish this, I designed the site as a prototype first, then coded out a static 
                 version of it. After this, I applied PHP code to my site that allowed users to add, view, edit, and delete 
-                recipes. Finally, I added in more recipes and did some finishing touches before calling it done. The end 
-                product was a success as it had all the functionality that I had originally intended for the site to have 
-                and it was simple and breathable.</p>
+                recipes. Finally, I added in more recipes and did some finishing touches (Like adding more recipes) before 
+                calling it done. The end product was a success as it had all the functionality that I had originally 
+                intended for the site to have and it was simple and breathable.</p>
         </div>
         <div class="section">
             <h2>Context and Challenges</h2>
@@ -61,7 +61,12 @@
             </div>
             <div class="processRev">
                 <img class="images big" src="images/Final.png" alt="Final">
-                <p>Lastly, I needed to add in recipes, as well as putting in some finishing touches.</p>
+                <p>Lastly, I needed to add in recipes, as well as putting in some finishing touches. I made the search function work
+                    and entered in data for a bunch of recipes. This step was really easy compared to connecting the database to my
+                    site, as there wasn't a lot to learn, just a lot of recipes to enter. Learning how to implement a search button was
+                    super helpful for me because it's a skill that I think a lot of websites need to have a great user experience.
+                    Without it, many pages would take forever to find if the site is too big.
+                </p>
             </div>
         </div>
         <div class="section">

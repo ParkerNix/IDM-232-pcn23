@@ -13,13 +13,13 @@
     <div class="body">
         <div class="feature">
             <div class="featimg">
-                <a href="details.php"><img src="images/grilledcheese.jpg" alt="grilled cheese"></a>
+                <a href="details.php?id=1"><img src="images/grilledcheese.jpg" alt="grilled cheese"></a>
             </div>
             <div class="feattext">
                 <h1>Ooey-Gooey Grilled Cheese</h1>
                 <p>Looking for a dish you can make for lunch that won’t 
                     take hours and doesn’t cost you an arm and a leg? This dish has you covered.</p>
-                <a href="details.php"><p>Go to recipe ></p></a>
+                <a href="details.php?id=1"><p>Go to recipe ></p></a>
             </div>
         </div>
         <div class="menu">

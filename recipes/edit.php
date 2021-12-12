@@ -7,8 +7,19 @@
     <link rel= "Normalizer" href= "../css/normalizer.css"/>
     <link rel= "stylesheet" href= "../css/main.css"/>
     <title>Edit | Recipe & Me</title>
+    <script src="https://cdn.tiny.cloud/1/ov880dkuh3czx3pa7ejxm5roz3uarifwvmzmxajmffm5m6ei/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
+<script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+    });
+  </script>
 <?php include '../includes/header.php' ?>
 <?php 
     include '../includes/config.php';

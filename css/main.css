@@ -171,11 +171,10 @@ html {
 
     .list {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 'recipe1 recipe2 recipe3'
-        'recipe4 recipe5 recipe6';
-        gap: 2rem;
+        grid-template-areas: 'recipe1 recipe2 recipe3';
+        gap: 2rem 1rem;
         margin: 2rem;
         align-content: center;
         }
@@ -199,21 +198,6 @@ html {
         text-align: center;
         grid-area: recipe3;
         align-self: center;
-    }
-
-    .recipe4 {
-        text-align: center;
-        grid-area: recipe4;
-    }
-
-    .recipe5 {
-        text-align: center;
-        grid-area: recipe5;
-    }
-
-    .recipe6 {
-        text-align: center;
-        grid-area: recipe6;
     }
 
 

@@ -3,7 +3,7 @@
     <body>
         <nav>
             <div class="search">
-                <a href="../../recipes/newrecipe.php">
+                <a href="https://parkerishere.com/IDM232/recipes/newrecipe.php">
                     New Recipe
                 </a>
             </div>
